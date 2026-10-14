@@ -82,7 +82,7 @@ class AnthropicAPIClient:
     """
 
     URL = "https://api.anthropic.com/v1/messages"
-    DEFAULT_MODEL = "claude-sonnet-4-5"
+    DEFAULT_MODEL = "claude-sonnet-5-5"
 
     def __init__(self, model: str | None = None, max_tokens: int = 16000, timeout: int = 600,
                  url: str | None = None):

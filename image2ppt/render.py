@@ -165,6 +165,9 @@ def _save_reproducible(prs, out_path):
 def render(pages, out_path):
     """pages: list of (layout_dict, PIL.Image). Writes one PPTX with one slide per page."""
     prs = Presentation()
+    cp = prs.core_properties
+    cp.author = cp.last_modified_by = "image2ppt"
+    cp.title = "image2ppt output"
     for lay, img in pages:
         add_slide(prs, lay, img.convert("RGB"))
     _save_reproducible(prs, str(out_path))
