@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image2ppt"
+version = "0.1.0"
+description = "Convert slide screenshots and framework figures into editable PPTX files with native shapes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Yifan Xiao" }]
+dependencies = ["python-pptx>=0.6.21", "Pillow>=9.2", "lxml>=4.9"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+image2ppt = "image2ppt.cli:main"
+
+[tool.setuptools]
+packages = ["image2ppt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

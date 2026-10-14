@@ -1,0 +1,23 @@
+{
+ "image_size": [1200, 640],
+ "background": "FFFFFF",
+ "elements": [
+  {"id": "t1", "type": "text", "box": [395, 18, 810, 62], "text": "Toy Framework (synthetic)", "bold": true, "line_px": 30, "align": "center"},
+  {"id": "b1", "type": "rect", "box": [115, 247, 246, 354], "fill": "DCE9F7", "line": "2F5597", "text": "Input", "line_px": 22, "align": "center"},
+  {"id": "b2", "type": "rect", "box": [286, 145, 915, 456], "fill": "F7F7F7", "line": "7F7F7F", "text": null},
+  {"id": "t2", "type": "text", "box": [312, 152, 404, 178], "text": "Encoder", "bold": true, "line_px": 20, "align": "left", "parent": "b2"},
+  {"id": "b3", "type": "rect", "box": [325, 246, 456, 353], "fill": "FFF2CC", "line": "BF9000", "text": "Embed", "line_px": 22, "align": "center", "parent": "b2"},
+  {"id": "b4", "type": "rect", "box": [527, 253, 674, 347], "fill": "FFF2CC", "line": "BF9000", "text": "Lightweigh\nt\nAttention", "line_px": 22, "align": "center", "parent": "b2"},
+  {"id": "b5", "type": "rect", "box": [736, 255, 884, 351], "fill": "FFF2CC", "line": "BF9000", "text": "Project", "line_px": 22, "align": "center", "parent": "b2"},
+  {"id": "b6", "type": "rect", "box": [946, 247, 1093, 355], "fill": "E2F0D9", "line": "548235", "text": "Output", "line_px": 22, "align": "center"},
+  {"id": "b7", "type": "rect", "box": [497, 517, 723, 593], "fill": "FCE4D6", "line": "C55A11", "rounded": true, "text": "Feedback", "line_px": 22, "align": "center"},
+  {"id": "t3", "type": "text", "box": [468, 260, 522, 286], "text": "tokens", "line_px": 16, "align": "center"},
+  {"id": "t4", "type": "text", "box": [108, 524, 216, 552], "text": "Score", "line_px": 18, "align": "center"},
+  {"id": "c1", "type": "crop", "box": [108, 428, 212, 522], "key_bg": true, "desc": "small bar chart icon"},
+  {"id": "a1", "type": "arrow", "points": [[253, 302], [317, 298]], "from_id": "b1", "to_id": "b3"},
+  {"id": "a2", "type": "arrow", "points": [[457, 304], [533, 297]], "from_id": "b3", "to_id": "b4"},
+  {"id": "a3", "type": "arrow", "points": [[672, 299], [742, 303]], "from_id": "b4", "to_id": "b5"},
+  {"id": "a4", "type": "arrow", "points": [[877, 296], [951, 301]], "from_id": "b5", "to_id": "b6"},
+  {"id": "a5", "type": "arrow", "dash": true, "points": [[1024, 357], [1018, 553], [724, 558]], "from_id": "b6", "to_id": "b7"}
+ ]
+}
